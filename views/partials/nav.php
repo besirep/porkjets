@@ -8,9 +8,9 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="./index.php" aria-current="page" class="<?php echo $_SERVER['REQUEST_URI']=== '/index.php' ? 'bg-gray-900 text-white' : 'text-gray-300'; ?> rounded-md px-3 py-2 text-sm font-medium">Home</a>
-              <a href="./about.php" class="<?php echo $_SERVER['REQUEST_URI']=== '/about.php' ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'?> rounded-md px-3 py-2 text-sm font-medium">About</a>
-              <a href="./contacts.php" class="<?php echo $_SERVER['REQUEST_URI']=== '/contacts.php' ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'?> rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+              <a href="./index.php" aria-current="page" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Home</a>
+              <a href="./about.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+              <a href="./contacts.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
             </div>
           </div>
         </div>
