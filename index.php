@@ -1,9 +1,17 @@
 <?php
-
 require 'function.php';
 
- $heading = 'Home'; 
+// dd($_SERVER);
 
+$uri = $_SERVER['REQUEST_URI'];
 
-
-require './views/index.view.php';
+if ($uri === '/' || $uri === '/index.php' || $uri === '/index') {
+    require 'controller/index.php';
+} elseif ($uri === '/about.php' || $uri === '/about') {
+    require 'controller/about.php';
+} elseif ($uri === '/contacts.php' || $uri === '/contacts') {
+    require 'controller/contacts.php';
+} else {
+    http_response_code(404);
+    echo "Page not found";
+}
